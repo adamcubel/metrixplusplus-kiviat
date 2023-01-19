@@ -108,7 +108,7 @@ def get_plottable_data_for_avg_complexity(data):
     if avg_complexity is None:
         print("Could not retrieve average methods per class from data")
     else:
-        retval = avg_complexity
+        retval = avg_complexity + 1 # This is because the tool starts from zero instead of one.
     return retval
 
 def get_plottable_data_for_max_complexity(data):
